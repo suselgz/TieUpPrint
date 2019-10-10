@@ -31,8 +31,7 @@ class  TieupPrint : public QObject
 {
 	Q_OBJECT
 public:
-	/*返回信息*/
-	virtual void GetlastMsg(int& type,QString& msg)=0;
+
 	/*打开串口*/
 	virtual bool OpenSerial(QString portname, int BaudRate, int DataBits, int Parity, int StopBits, RcvTipUpCallBack* hook) = 0;
 	/*关闭串口*/

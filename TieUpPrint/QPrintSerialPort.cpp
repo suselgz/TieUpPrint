@@ -164,7 +164,6 @@ void QPrintSerialPort::ReadData()
 	QString rcv;
 	RevSerialPortData(strData,rcv,type);
 	m_hook->RcvCallBackEx(type, rcv);
-//	emit SendDataToOnlineUI(strData);
 	buf.clear();
 }
 void QPrintSerialPort::RevSerialPortData(QString rev,QString& ret,int& type)
